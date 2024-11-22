@@ -1,13 +1,13 @@
 ---
-title: 'Práctica 2: Sistemas de archivos'
+title: 'Unidad 3: Sistemas de archivos - Práctica 2'
 published: 2024-11-14
-description: "Práctica que consiste en la verificación de los sistemas de archivos en Linux (permisos, propietarios, etc.)"
-tags: ["Sistemas Operativos", "Blogging", "Tec Motul"]
+description: 'Práctica que consiste en la verificación de los sistemas de archivos en Linux (permisos, propietarios, etc.)'
+tags: ['Sistemas Operativos', 'Blogging', 'TecMotul']
 category: 'Sistemas Operativos'
 draft: false
 ---
 
-## Verificación del propietario y grupo de  /etc/passwd
+## Verificación del propietario y grupo de /etc/passwd
 
 Primero debemos crear en nuestro directorio inicial un subdirectorio llamado "copia" y ahora copiamos dentro de éste el archivo /etc/passwd.
 Primero nos ubicamos en el directorio de usuario
@@ -52,6 +52,7 @@ mkdir prueba
 ```
 
 ### ¿Que ocurre?
+
 Si intentamos crear el directorio `prueba` en el directorio `/etc` se nos mostrará un mensaje de error indicando que no tenemos permisos para realizar esta operación, ya que el directorio `/etc` es un directorio del sistema y solo el usuario `root` tiene permisos para realizar operaciones en él.
 
 :::tip
@@ -91,7 +92,7 @@ Para visualizar los archivos y directorios ocultos en Linux usamos el comando `l
 ls -a
 ```
 
-## Crear directorio  D1 en el directorio inicial.
+## Crear directorio D1 en el directorio inicial.
 
 Para crear un directorio llamado `D1` en nuestro directorio inicial usamos el comando `mkdir` de la siguiente manera:
 
@@ -104,7 +105,7 @@ mkdir $HOME/D1
 
 Por defecto, el directorio `D1` se crea con los permisos de lectura, escritura y ejecución para el usuario actual y el grupo al que pertenece el usuario.
 
-#### Denegar la ejecución usando umask 
+#### Denegar la ejecución usando umask
 
 Para denegar los permisos de ejecución en el directorio `D1` usamos el comando `umask` de la siguiente manera:
 
